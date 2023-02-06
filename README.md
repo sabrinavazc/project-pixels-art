@@ -39,7 +39,7 @@ Você pode ~~e deve~~ ir além para deixar o projeto com a sua cara e impression
   
   * Este projeto é individual;
   * Serão `2` dias de projeto;
-  * Data para entrega final do projeto: `14/02/2023 14:00`.
+  * Data para entrega do projeto: `14/02/2023 14:00`.
 
 </details>
 
