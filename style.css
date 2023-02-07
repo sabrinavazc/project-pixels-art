@@ -7,13 +7,14 @@
 
 h1{
     text-align: center;
-    text-shadow: 0 0 0.2em rgb(236, 183, 175), 0 0 0.2em rgb(232, 107, 88);
-    color: rgb(115, 123, 204);
+    text-shadow: 0 0 0.2em rgb(255, 255, 255), 0 0 0.2em rgb(179, 192, 197);
+    color: rgb(5, 14, 142);
 }
 
 #color-palette{
     display: inline-block;
     width: 41%;
+    height: 127px;
     margin-left: 340px;
     border: 1px solid black;
     margin-top: 20px;
@@ -33,3 +34,18 @@ h1{
     transform: scale(1.5);
     box-shadow: 0 5px 1px rgba(0,0,0,0.6); 
 }
+
+#button-random-color{
+    border: none;
+    padding: 6px;
+    text-decoration:none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: orange;
+    color: rgb(5, 14, 142);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+}
+
+#button-random-color:hover {
+    background:linear-gradient(to bottom, #b465a6 5%, #d5aac4 100%);
