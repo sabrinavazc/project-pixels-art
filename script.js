@@ -6,7 +6,7 @@ section.appendChild (randonButton);
 randonButton.id = "button-random-color";
 randonButton.innerHTML = "Cores aleatórias"
 
-const colors = document.querySelectorAll('.color');
+const colorspalette = document.querySelectorAll(".color");
 
 const randomColor = () => {
     const r = Math.floor(Math.random() * 255);
@@ -15,9 +15,11 @@ const randomColor = () => {
     return `rgb(${r}, ${g}, ${b})`;
   };
   
-button.addEventListener('click', function () {
-    for (let index = 1; index < colors.length; index += 1) {
-      colors[index].style.backgroundColor = randomColor();
+randonButton.addEventListener('click', function () {
+    for (let index = 1; index < colorspalette.length; index += 1) {
+      colorspalette[index].style.backgroundColor = randomColor();
     }
   });
 
+
+//local storage//
