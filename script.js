@@ -21,5 +21,6 @@ randonButton.addEventListener('click', function () {
     }
   });
 
-
 //local storage//
+
+localStorage.setItem('colorspalette', JSON.stringify(colorObject));
