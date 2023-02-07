@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 0 0 0.2em rgb(236, 183, 175), 0 0 0.2em rgb(232, 107, 88);
+    color: rgb(115, 123, 204);
+}
+
+#color-palette{
+    display: inline-block;
+    width: 42%;
+    margin-left: 350px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.color {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
