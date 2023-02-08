@@ -1,4 +1,4 @@
-//botão randomico//
+//botão randomico - sem o incluir o index 0 do black//
 const section = document.querySelector("section");
 
 const randonButton = document.createElement("button");
@@ -15,7 +15,7 @@ const randomColor = () => {
     return `rgb(${r}, ${g}, ${b})`;
   };
   
-randonButton.addEventListener('click', function () {
+randonButton.addEventListener('click', () => {
     for (let index = 1; index < colorspalette.length; index += 1) {
       colorspalette[index].style.backgroundColor = randomColor();
     }
@@ -23,4 +23,4 @@ randonButton.addEventListener('click', function () {
 
 //local storage//
 
-localStorage.setItem('colorspalette', JSON.stringify(colorObject));
+  window.onload = loadColorPallete;
