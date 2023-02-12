@@ -49,3 +49,31 @@ h1{
 
 #button-random-color:hover {
     background:linear-gradient(to bottom, #b465a6 5%, #d5aac4 100%);
+}
+
+#pixel-board {   
+    padding: 0;
+    margin: 40px auto;
+    width: fit-content;
+   
+    height: fit-content;
+  }
+  
+/* .line{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    background-color: #b465a6;
+  } */
+
+
+.pixel {
+    display: inline-block;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    padding: 0;
+    
+  }

@@ -21,6 +21,47 @@ randonButton.addEventListener('click', () => {
     }
   });
 
-//local storage//
 
-  window.onload = loadColorPallete;
+
+// //local storage-------------!!!!!!!!!!!!????????//
+
+// function saveLocalStorage(){
+//     const newPaletteColors = document.querySelector("#color-palette");
+//     localStorage.setItem("newColors",colorspalette);
+// }
+
+
+//quadro de pixels//
+
+const pixelBoard = document.getElementById('pixel-board');
+
+for (let index = 0; index < 5; index += 1) {
+    const line = document.createElement("div");
+    line.style.display = 'flex';
+                for (let i = 0; i < 5; i += 1) {
+                    const pixel = document.createElement("div")
+                    pixel.classList.add("pixel");
+                    line.appendChild(pixel);
+  }
+  pixelBoard.appendChild(line);
+}
+
+const createPixels = (scale) => {
+  const lines = document.getElementsByClassName('line');
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
+    for (let index2 = 1; index2 <= scale; index2 += 1) {
+      const pixels = document.createElement('li');
+      pixels.className = 'pixel';
+      pixels.style.backgroundColor = 'white';
+      line.appendChild(pixels);
+    }
+  }
+};
+
+  const createBoard = (scale) => {
+    createLines(scale);
+    createPixels(scale);
+  };
+  createBoard(5);
+
