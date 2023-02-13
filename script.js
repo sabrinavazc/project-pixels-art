@@ -59,9 +59,16 @@ const createPixels = (scale) => {
   }
 };
 
-  const createBoard = (scale) => {
-    createLines(scale);
+const createBoard = (scale) => {
+    // createLines(scale);
     createPixels(scale);
   };
-  createBoard(5);
+createBoard(5);
 
+// Defina a cor preta como cor inicial da paleta de cores
+
+// Colorindo os pixels
+
+// function setPixelColour{
+//     pixel.style.backgroundColor = "black";
+// }
