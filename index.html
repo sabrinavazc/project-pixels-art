@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Pixel Art</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Pixels Art</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
+
+  <header>
     <h1 id="title">Paleta de Cores</h1>
-    </header>    
+  </header>
 
-<section id="color-palette"> 
-        <div class="color" style="background-color: black;"></div>
-        <div class="color" style="background-color: rgb(245, 247, 124);"></div>
-        <div class="color" style="background-color: rgb(126, 246, 214);"></div>
-        <div class="color" style="background-color: rgb(243, 101, 101);"></div>
-        <div class="color" style="background-color: rgb(116, 185, 245);"></div>
-        <div class="color" style="background-color: rgb(246, 202, 240);"></div>
-        <div class="color" style="background-color: rgb(209, 205, 209);"></div>      
-</section>
+  <section id="palette">
+        <ul id="color-palette">
+                <li class="color" id="black"></li>
+                <li class="color" id="green"></li>
+                <li class="color" id="yellow"></li>
+                <li class="color" id="blue"></li>
+        </ul>
+    <button id="button-random-color">Cores aleatórias</button>
+    <button id="clear-board">Limpar</button>
+  </section>
 
-<section id = "pixel-board"></section>
+  <section id="pixel-board"></section>
 
-<script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
