@@ -60,18 +60,6 @@ const clearBoard = () => {
 const btnCleanColors = document.getElementById('clear-board');
 btnCleanColors.addEventListener('click', clearBoard);
 
-// // Cria função que salva as cores da paleta no localStorage
-// const loadColors = () => {
-//   if (localStorage.getItem('colorPalette') !== null) {
-//     const colors = document.getElementsByClassName('color');
-//     const returnedColors = JSON.parse(localStorage.getItem('colorPalette'));
-//     for (let i = 1; i < colors.length; i += 1) {
-//       const color = returnedColors[i - 1];
-//       colors[i].style.backgroundColor = color;
-//     }
-//   }
-// };
-
 
 const createLines = (size) => {
   const sectionPixels = document.getElementById('pixel-board');
